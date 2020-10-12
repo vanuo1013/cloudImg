@@ -3,9 +3,9 @@ function toggle(e) {
   "none" == a
     ? ((e.parentElement.nextSibling.style.display = "block"),
       (e.parentElement.nextSibling.style.height = "100%"),
-      (e.className = e.className.replace("fa-chevron-up", "fa-chevron-down")))
+      (e.className = e.className.replace("fa-chevron-left", "fa-chevron-down")))
     : ((e.parentElement.nextSibling.style.display = "none"),
-      (e.className = e.className.replace("fa-chevron-down", "fa-chevron-up")));
+      (e.className = e.className.replace("fa-chevron-down", "fa-chevron-left")));
 }
 for (
   var card_category_list = document.getElementsByClassName(
@@ -16,7 +16,7 @@ for (
   i < card_category_list.length;
   i++
 )
-  (card_category_list[i].style.display = "none"),
+  (card_category_list[i].style.display = "block"),
     (card_category_list[i].style.transition = "all 1s"),
     (card_category_list[i].previousSibling.firstChild.innerHTML +=
-      '<i class="fa fa-chevron-up menus-expand  menus-closed" aria-hidden="true" style="margin-left:20px;" onclick="toggle(this)"></i>');
+      '<i class="fa fa-chevron-left menus-expand  menus-closed" aria-hidden="true" style="margin-left:20px;" onclick="toggle(this)"></i>');
