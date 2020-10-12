@@ -18,5 +18,5 @@ for (
 )
   (card_category_list[i].style.display = "block"),
     (card_category_list[i].style.transition = "all 1s"),
-    (card_category_list[i].previousSibling.firstChild.innerHTML +=
+    (card_category_list[i].previousSibling.innerHTML +=
       '<i class="fa fa-chevron-down menus-expand  menus-closed" aria-hidden="true" style="margin-left:20px;" onclick="toggle(this)"></i>');
