@@ -2472,7 +2472,7 @@
             L = function (t) {
               if (
                 e.config.requiredFields.indexOf("nick") > -1 &&
-                E.nick.length < 3
+                E.nick.length < 1
               )
                 return (
                   v.nick[0].focus(),
@@ -5591,7 +5591,7 @@ object-assign
         nick: "NickName／QQ (required)",
         mail: "E-Mail (required)",
         link: "Website (http://)",
-        nickFail: "NickName cannot be less than 3 bytes.",
+        nickFail: "Please confirm your QQ number.",
         mailFail: "Please confirm your email address.",
         sofa: "No comment yet.",
         submit: "Submit",
@@ -5669,7 +5669,7 @@ object-assign
         nick: "昵称／QQ（必填）",
         mail: "邮箱（必填）",
         link: "网址（http://）",
-        nickFail: "昵称不能少于3个字符",
+        nickFail: "请填写正确的QQ号",
         mailFail: "请填写正确的邮件地址",
         sofa: "来发评论吧~",
         submit: "提交",
